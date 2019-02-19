@@ -1,0 +1,129 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #9BA9AD;
+  color: #444;
+  line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+body a {
+  color: #3E6D7A;
+}
+
+body > nav {
+  background-color: #8CA6AD;
+  padding: 0 10px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+  body > nav {
+    max-width: unset;
+    width: 100%;
+    margin-bottom: 0;
+    height: fit-content;
+  }
+}
+
+nav .mini-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav .mini-profile .profile-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .mini-profile .profile-description {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 700px) {
+  nav .mini-profile {
+    display: flex;
+    flex-direction: row;
+  }
+  nav .mini-profile .profile-picture {
+    width: 25%;
+    height: 25%;
+  }
+}
+
+nav ul.menu-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul.menu-items li.menu-item {
+  border-bottom: 1px solid #444;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+nav ul.menu-items li.menu-item:hover {
+  background-color: #9BA9AD;
+}
+
+nav ul.menu-items li.menu-item a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+}
+
+body > div.container {
+  padding: 0 25px;
+  margin-bottom: 60px;
+  flex-grow: 2;
+  width: calc(100% - 270px);
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 700px) {
+  body > div.container {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+body > footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #8CA6AD;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  top: 5px;
+}
+
+.index-entry {
+  margin-bottom: 15px;
+  background-color: #8CA6AD;
+  padding: 5px 10px;
+  max-width: 800px;
+}
+
+.index-entry h2 {
+  margin: 0;
+}

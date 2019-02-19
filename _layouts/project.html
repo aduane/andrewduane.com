@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{{ page.description }}
+
+{% if page.preview_picture_path %}
+<br/>
+<img alt="preview picture for {{ page.title }}" src="{{ page.preview_picture_path }}">
+{% endif %}
+
+<p>
+{% if page.live_url %}
+See it live: <a href="{{ page.live_url }}">{{ page.live_url }}</a>&nbsp;<span class="icon-external-link"></span>
+<br/>
+{% endif %}
+
+{% if page.repo_url %}
+<span class="icon-github"></span> Repo: <a href="{{ page.repo_url }}">{{ page.repo_url }}</a>&nbsp;<span class="icon-external-link"></span>
+<br/>
+{% endif %}
+
+{% if page.technologies %}
+<span>Technologies involved: {{ page.technologies }}</span>
+{% endif %}
+</p>
+{{ content }}
