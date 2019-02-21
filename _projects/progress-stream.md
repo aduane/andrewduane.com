@@ -3,7 +3,7 @@ layout: project
 title: progress.stream
 description: Progress Bars as a service!
 repo_url: https://github.com/aduane/progress
-live_url: https://progress.stream
+live_url: http://progress.stream
 preview_picture_path: /img/projects/progress-stream-preview.png
 technologies: ruby, rails, websockets, redis
 ---
