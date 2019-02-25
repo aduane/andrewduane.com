@@ -15,3 +15,7 @@ retro game systems for use with modern TVs.
 
 _Andrew lives in the Seattle area with his wife, Alecia, and their cat,
 Stella._
+
+{% for post in site.posts limit:1 %}
+### Latest Post: {{post.date | date: '%B %d, %Y' }} – [{{post.title}}]({{post.url}})
+{% endfor %}
