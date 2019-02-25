@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New page, same me
+title: New Page, Same Me
 description: Well, I've finally taken it upon myself to relaunch my website...
 ---
 
