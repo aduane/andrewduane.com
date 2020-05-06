@@ -9,11 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
       function ready() {
-        // Hide the address bar!
-        setTimeout(function(){
-          window.scrollTo(0, 1);
-        }, 0);
-
         var flipButtons = document.querySelectorAll('.flip-button');
         flipButtons.forEach( function(button, index) {
           button.addEventListener('click', function() {
