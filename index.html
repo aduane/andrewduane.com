@@ -8,7 +8,8 @@
     <meta property="og:description" content="Information about Andrew Duane.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-      function addFlipButtonListener() {
+      function ready() {
+        window.scrollTo(0,1);
         var flipButtons = document.querySelectorAll('.flip-button');
         flipButtons.forEach( function(button, index) {
           button.addEventListener('click', function() {
@@ -19,7 +20,7 @@
       }
     </script>
   </head>
-  <body onload="addFlipButtonListener();">
+  <body onload="ready();">
     <div class="flip-scene">
       <div class="business-card">
         <div class="business-card-face business-card-face--front">
