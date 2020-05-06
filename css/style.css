@@ -23,10 +23,10 @@ body {
   html {
     transform: rotate(90deg);
     transform-origin: right top;
-    width: 100vh;
+    height: 100vw;
     overflow-x: hidden;
     position: absolute;
-    top: 100%;
+    top: 97vh;
     right: 0;
   }
 }
@@ -34,7 +34,6 @@ body {
 .flip-scene {
   width: 640px;
   max-width: 640px;
-
   height: 365.714284px;
   max-height: 365.714284px;
   perspective: 600px;
