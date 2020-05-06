@@ -1,47 +1,46 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  --color-sand: #FFE7E7;
-  --color-peri: #C0ACE1;
-  --color-pink: #F17BB8;
+body {
   --color-navy: #2F426D;
   --color-blue: #4076DF;
   --color-teal: #6CCBCF;
-}
-
-body {
-  margin: 0 auto;
+  margin: 40px auto;
+  max-width: 700px;
   line-height: 1.4;
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   background-color: #EEE;
   color: var(--color-navy);
-  display: flex;
-  justify-content: center;
 }
 
 h1.fn {
-  line-height: 1.2;
   margin-bottom: 0;
 }
 
-h1.fn, a, hr {
+h1, h2, h3 {
+  line-height: 1.2;
   color: var(--color-blue);
 }
 
-.half-stripes {
+a {
+  color: var(--color-teal);
+}
+
+.photo-container {
   background-image: repeating-linear-gradient(
       90deg,
-      var(--color-navy),
-      var(--color-navy) 25%,
-      var(--color-navy) 33.333333%,
-      var(--color-blue) 33.333333%,
-      var(--color-blue) 41.666666%,
-      var(--color-teal) 41.666666%,
-      var(--color-teal) 50%,
+      white,
       white 50%,
-      white
+      var(--color-navy) 50%,
+      var(--color-navy) 66.666666%,
+      var(--color-blue) 66.666666%,
+      var(--color-blue) 83.333333%,
+      var(--color-teal) 83.333333%,
+      var(--color-teal) 100%
   );
+  width: 260px;
+}
+
+.name {
+  padding-bottom: 16px;
 }
 
 .hidden {
@@ -49,32 +48,30 @@ h1.fn, a, hr {
 }
 
 .vcard {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+  padding: 0 25px;
 }
 
 .vcard img.photo {
-  width: 25%;
+  max-height: 130px;
   border: 2px solid var(--color-blue);
 }
 
 .main-information {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
 }
 
-.main-information > div {
-  margin-left: 25%;
-}
-
-.information {
+.web-presence {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.web-presence > div {
-  margin-top: 15px;
+.web-presence > div > * {
+  display: block;
 }
 
 .about-me ul {
