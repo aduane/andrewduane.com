@@ -7,76 +7,59 @@
     <meta content="utf-8" http-equiv="encoding">
     <meta property="og:description" content="Information about Andrew Duane.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-      function ready() {
-        var flipButtons = document.querySelectorAll('.flip-button');
-        flipButtons.forEach( function(button, index) {
-          button.addEventListener('click', function() {
-            var card = document.querySelector('.business-card');
-            card.classList.toggle('is-flipped');
-          });
-        });
-      }
-    </script>
   </head>
-  <body onload="ready();">
-    <div class="flip-scene">
-      <div class="business-card">
-        <div class="business-card-face business-card-face--front">
-          <span class="flip-button">↩</span>
-          <div class="vcard">
-            <div class="main-information">
-              <img class="photo" src="img/me.png" align="left" />
-              <div>
-                <h1 class="fn">Andrew Duane</h1>
-                <span class="title">Senior Software Engineer</span>
-                <div class="adr">
-                  <span class="type hidden">Home</span>
-                  <span class="locality">Federal Way</span>, <span class="region">WA</span>
-                </div>
-              </div>
-            </div>
-            <div class="web-presence">
-              <hr/>
-              <div>
-                <small>E-Mail: </small><a class="email" href="mailto:andrew.m.duane@gmail.com">andrew.m.duane@gmail.com</a>
-              </div>
-              <div>
-                <small>Github: </small><a class="url" target="_blank" rel="noopener" href="https://github.com/aduane">@aduane</a>
-              </div>
-              <div>
-                <small>LinkedIn: </small><a class="url" target="_blank" rel="noopener" href="https://www.linkedin.com/in/andrew-duane">andrew-duane</a>
-              </div>
-            </div>
-            <div class="metadata">
-              <hr/>
-              <div class="n hidden">
-                <span class="given-name">Andrew</span> <span class="family-name">Duane</span>
-              </div>
-              <em>vCard last updated:</em>
-              <time class="rev" datetime="2020-05-05T18:33:24-07:00">May 05, 2020 at 6:33 PM PDT</time>
-            </div>
+  <body>
+    <div class="vcard">
+      <div class="main-information half-stripes">
+        <img class="photo" src="img/me.png" align="left" />
+        <div>
+          <h1 class="fn">Andrew Duane</h1>
+          <span class="title">Senior Software Engineer</span>
+          <div class="adr">
+            <span class="type hidden">Home</span>
+            <span class="locality">Federal Way</span>, <span class="region">WA</span>
           </div>
         </div>
-        <div class="business-card-face business-card-face--back">
-          <span class="flip-button">↪</span>
-          <div class="information-extras">
-              Experience:
-              <ul>
-                <li>Modern Web Applications</li>
-                <li>MySQL, MSSQL, and PostgreSQL Databases</li>
-                <li>Healthcare Data Interoperability</li>
-              </ul>
-              Hobbies:
-              <ul>
-                <li>Bowling</li>
-                <li>Road Tripping</li>
-                <li>Private Cable Company</li>
-                <li>Renewable Energy</li>
-                <li>Retro Video Gaming</li>
-              </ul>
+      </div>
+      <div>
+        <hr/>
+      </div>
+      <div class="information">
+        <div class="web-presence">
+          <div>
+            <small>E-Mail: </small><a class="email" href="mailto:andrew.m.duane@gmail.com">andrew.m.duane@gmail.com</a>
+          </div>
+          <div>
+            <small>Github: </small><a class="url" target="_blank" rel="noopener" href="https://github.com/aduane">@aduane</a>
+          </div>
+          <div>
+            <small>LinkedIn: </small><a class="url" target="_blank" rel="noopener" href="https://www.linkedin.com/in/andrew-duane">andrew-duane</a>
           </div>
         </div>
+        <div class="about-me">
+            Experience:
+            <ul>
+              <li>Modern Web Applications</li>
+              <li>MySQL, MSSQL, and PostgreSQL Databases</li>
+              <li>Healthcare Data Interoperability</li>
+            </ul>
+            Hobbies:
+            <ul>
+              <li>Bowling</li>
+              <li>Road Tripping</li>
+              <li>Private Cable Company</li>
+              <li>Renewable Energy</li>
+              <li>Retro Video Gaming</li>
+            </ul>
+        </div>
+      </div>
+      <div class="metadata">
+        <hr/>
+        <div class="n hidden">
+          <span class="given-name">Andrew</span> <span class="family-name">Duane</span>
+        </div>
+        <em>Last updated:</em>
+        <time class="rev" datetime="2020-05-05T18:33:24-07:00">May 05, 2020 at 6:33 PM PDT</time>
       </div>
     </div>
   </body>

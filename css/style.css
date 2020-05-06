@@ -1,5 +1,6 @@
 html, body {
-  margin: 0;
+  height: 100%;
+  width: 100%;
   --color-sand: #FFE7E7;
   --color-peri: #C0ACE1;
   --color-pink: #F17BB8;
@@ -9,34 +10,14 @@ html, body {
 }
 
 body {
-  line-height: 1.2;
+  margin: 0 auto;
+  line-height: 1.4;
   font-family: "Helvetica", sans-serif;
   font-size: 18px;
   background-color: #EEE;
+  color: var(--color-navy);
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-}
-
-@media (max-device-width: 639px) and (orientation: portrait) {
-  html {
-    transform: rotate(90deg);
-    transform-origin: right top;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 97vh;
-    right: 0;
-  }
-}
-
-.flip-scene {
-  width: 640px;
-  max-width: 640px;
-  height: 365.714284px;
-  max-height: 365.714284px;
-  perspective: 600px;
 }
 
 h1.fn {
@@ -48,52 +29,19 @@ h1.fn, a, hr {
   color: var(--color-blue);
 }
 
-.business-card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  color: var(--color-navy);
-  overflow-y: hidden;
-}
-
-.business-card-face {
-  padding: 20px;
-  background: white;
-  position: absolute;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  transition: transform 1s;
-  backface-visibility: hidden;
-}
-
-.business-card.is-flipped .business-card-face--front {
-  transform: rotateY(180deg);
-}
-
-.business-card.is-flipped .business-card-face--back {
-  transform: rotateY(360deg);
-}
-
-.business-card-face--back {
+.half-stripes {
   background-image: repeating-linear-gradient(
       90deg,
-      var(--color-sand),
-      var(--color-sand) 56.6666666px,
-      var(--color-peri) 56.6666666px,
-      var(--color-peri) 113.333333px,
-      var(--color-pink) 113.333333px,
-      var(--color-pink) 170px,
-      var(--color-navy) 170px,
-      var(--color-navy) 226.666666px,
-      var(--color-blue) 226.666666px,
-      var(--color-blue) 283.333333px,
-      var(--color-teal) 283.333333px,
-      var(--color-teal) 340px,
-      white 340px,
+      var(--color-navy),
+      var(--color-navy) 25%,
+      var(--color-navy) 33.333333%,
+      var(--color-blue) 33.333333%,
+      var(--color-blue) 41.666666%,
+      var(--color-teal) 41.666666%,
+      var(--color-teal) 50%,
+      white 50%,
       white
   );
-  transform: rotateY(180deg);
 }
 
 .hidden {
@@ -101,9 +49,9 @@ h1.fn, a, hr {
 }
 
 .vcard {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .vcard img.photo {
@@ -120,38 +68,16 @@ h1.fn, a, hr {
   margin-left: 25%;
 }
 
-.main-information > div, .web-presence {
-  flex-grow: 1;
+.information {
+  display: flex;
+  justify-content: space-between;
 }
 
 .web-presence > div {
   margin-top: 15px;
 }
 
-.flip-button {
-  position: fixed;
-  bottom: 0;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.business-card-face--front .flip-button {
-  right: 0;
-}
-
-.business-card-face--back .flip-button {
-  left: 0;
-}
-
-.information-extras {
-  width: 250px;
-  float: right;
-  margin-top: 20px;
-}
-
-.information-extras ul {
+.about-me ul {
   margin-top: 0;
 }
 
