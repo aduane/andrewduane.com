@@ -17,11 +17,10 @@ h1.fn {
 
 h1, h2, h3 {
   line-height: 1.2;
-  color: var(--color-blue);
 }
 
-a {
-  color: var(--color-teal);
+h1, h2, h3, a {
+  color: var(--color-blue);
 }
 
 .photo-container {
